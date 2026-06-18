@@ -1,0 +1,47 @@
+{
+  "performanceMetrics": {
+    "accuracy": 97.36,
+    "precision": 100.0,
+    "recall": 97.36,
+    "f1Score": 98.66,
+    "falsePositiveRate": 2.64
+  },
+  "confusionMatrix": [
+    [
+      9455,
+      67,
+      188,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "threshold": 0.35
+}
