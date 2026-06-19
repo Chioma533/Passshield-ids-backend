@@ -93,6 +93,13 @@ def calculate_fpr(y_true, y_pred):
     false_positives = (y_true == 'Normal') & (y_pred != 'Normal')
     return float(false_positives.sum() / normal_mask.sum())
 
+@app.route('/')
+def home():
+    return jsonify({
+        "message": "PassShield IDS API Running",
+        "status": "success"
+    })
+
 @app.route('/health', methods=['GET'])
 def health():
     return jsonify({
