@@ -16,7 +16,16 @@ from utils.attack_mapping import COLUMNS, CATEGORICAL_COLUMNS, NUMERICAL_COLUMNS
 from utils.preprocessing import RobustLabelEncoder
 
 app = Flask(__name__)
-CORS(app)  # Enable Cross-Origin Resource Sharing
+CORS(
+    app,
+    resources={
+        r"/*": {
+            "origins": [
+                "https://passshield-ids-frontend.vercel.app/"
+            ]
+        }
+    }
+)  # Enable Cross-Origin Resource Sharing
 
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
