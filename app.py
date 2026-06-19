@@ -21,7 +21,7 @@ CORS(
     resources={
         r"/*": {
             "origins": [
-                "https://passshield-ids-frontend.vercel.app/"
+                "https://passshield-ids-frontend.vercel.app"
             ]
         }
     }
